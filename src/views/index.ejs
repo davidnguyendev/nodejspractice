@@ -39,7 +39,17 @@
                 <a href="/detail/user/<%= dataUser[i].id %>">Detail</a>
               </div>
               <div class="action-child"><button>Edit</button></div>
-              <div class="action-child"><button>Delete</button></div>
+              <div class="action-child">
+                <form action="/delete-user" method="POST">
+                  <input
+                    type="text"
+                    value="<%= dataUser[i].id %>"
+                    name="userId"
+                    hidden
+                  />
+                  <button type="submit">Delete</button>
+                </form>
+              </div>
             </td>
           </tr>
           <% } %>

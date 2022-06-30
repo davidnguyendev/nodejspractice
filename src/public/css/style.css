@@ -41,6 +41,21 @@
   
   tr:hover {background-color: rgb(235, 231, 231);}
 
+/* style action tag */
 .action-child{
     display: inline-block;
+}
+
+/* create user form */
+
+.create-user-container{
+  text-align: center;
+}
+
+.create-user-container label{
+  display: block
+}
+
+.create-user-container .btn-submit{
+  margin-top: 15px;
 }

@@ -38,7 +38,11 @@
               <div class="action-child">
                 <a href="/detail/user/<%= dataUser[i].id %>">Detail</a>
               </div>
-              <div class="action-child"><button>Edit</button></div>
+              <div class="action-child">
+                <form action="/edit-user/<%= dataUser[i].id %>" method="GET">
+                  <button type="submit">Edit</button>
+                </form>
+              </div>
               <div class="action-child">
                 <form action="/delete-user" method="POST">
                   <input

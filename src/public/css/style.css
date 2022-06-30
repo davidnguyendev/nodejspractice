@@ -41,6 +41,12 @@
   
   tr:hover {background-color: rgb(235, 231, 231);}
 
+ /* button hover  */
+
+ button:hover{
+  cursor: pointer;
+ }
+
 /* style action tag */
 .action-child{
     display: inline-block;
@@ -57,5 +63,20 @@
 }
 
 .create-user-container .btn-submit{
+  margin-top: 15px;
+}
+
+/* update.ejs */
+
+.update-user-container{
+  text-align: center;
+  padding: 15px;
+}
+
+.update-user-container label{
+  display: block;
+}
+
+.update-user-containe .btn-save{
   margin-top: 15px;
 }
